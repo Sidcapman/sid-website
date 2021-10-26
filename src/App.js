@@ -7,7 +7,7 @@ import Contact from './Components/Sid/Contact'
 import Projects from './Components/Sid/Projects'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import SecondNav from './Components/SecondNav'
-
+import ProgressLevels from './Components/Sid/Levels/Levels'
 function App() {
   return (
     <div>
@@ -15,6 +15,7 @@ function App() {
       <SecondNav />
       <TypeWriter />
       <About />
+      <ProgressLevels />
       <Projects />
       <Achievements />
       <Contact />

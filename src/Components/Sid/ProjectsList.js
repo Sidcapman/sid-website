@@ -8,8 +8,8 @@ export const data = [
     head: 'Validation Form',
     description:
       'This website Checks whether the entered details are matching the requirements',
-    demo: 'https://github.com/Sidcapman/Validation-form',
-    source: 'https://sidcapman.github.io/Validation-form/',
+    source: 'https://github.com/Sidcapman/Validation-form',
+    demo: 'https://sidcapman.github.io/Validation-form/',
   },
   {
     id: 2,

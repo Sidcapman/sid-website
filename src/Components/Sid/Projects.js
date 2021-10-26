@@ -35,33 +35,35 @@ const Descri = styled.div`
 //
 const Projects = () => {
   return (
-    <div className="container">
-      {data.map((item) => {
-        return (
-          <div
-            style={{
-              display: 'flex',
-              flexDirection: 'column',
-              position: 'relative',
-            }}>
-            <Tilt style={{ width: '23rem' }} className="card" key={item.id}>
-              <Image src={item.image} alt={item.head} />
-              <Info className="content">
-                <Title>{item.head}</Title>
-                <Descri>{item.description}</Descri>
-              </Info>
-            </Tilt>
-            <a href={item.demo} className="link">
-              <span>
-                <i class="fab fa-firefox-browser fa-3x"></i>
-              </span>
-            </a>
-            <a href={item.source} className="link-1">
-              <i class="fab fa-github fa-3x"></i>
-            </a>
-          </div>
-        )
-      })}
+    <div id="project">
+      <div className="container ">
+        {data.map((item) => {
+          return (
+            <div
+              style={{
+                display: 'flex',
+                flexDirection: 'column',
+                position: 'relative',
+              }}>
+              <Tilt style={{ width: '23rem' }} className="card" key={item.id}>
+                <Image src={item.image} alt={item.head} />
+                <Info className="content">
+                  <Title>{item.head}</Title>
+                  <Descri>{item.description}</Descri>
+                </Info>
+              </Tilt>
+              <a href={item.demo} className="link">
+                <span>
+                  <i class="fab fa-firefox-browser fa-3x"></i>
+                </span>
+              </a>
+              <a href={item.source} className="link-1">
+                <i class="fab fa-github fa-3x"></i>
+              </a>
+            </div>
+          )
+        })}
+      </div>
     </div>
   )
 }

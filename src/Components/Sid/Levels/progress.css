@@ -1,0 +1,79 @@
+.main-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  height: 90vh;
+  box-sizing: border-box;
+  margin: 0 4rem;
+}
+.language {
+  position: absolute;
+  top: 1rem;
+  color: black;
+  z-index: 9;
+}
+
+.second-container {
+  display: flex;
+  position: relative;
+  margin: 1rem 4rem;
+  border: 0.1rem solid black;
+  border-radius: 0.8rem;
+  width: 15rem;
+  height: 2.2rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.8rem;
+  overflow: hidden;
+}
+
+.progress-complete {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #5225bd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: g 2500ms infinite ease-in-out;
+  z-index: 2;
+}
+.progress-liquid {
+  z-index: 0;
+  background: #5225bd;
+  position: absolute;
+  right: -0.5rem;
+  top: -0.6rem;
+  height: 3rem;
+  border-radius: 40%;
+  width: 3rem;
+  animation: r 2500ms infinite cubic-bezier(0.5, 0.5, 0.5, 0.5);
+}
+.progress-title {
+  z-index: 2;
+  color: white;
+}
+
+/* @keyframes g {
+  0% {
+    background-color: #5225bd;
+  }
+  50% {
+    background-color: #527caa;
+  }
+  100% {
+    background-color: #5225bd;
+  }
+} */
+
+@keyframes r {
+  from {
+    transform: rotate(0deg);
+  }
+  from {
+    transform: rotate(360deg);
+  }
+}

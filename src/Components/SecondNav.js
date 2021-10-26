@@ -22,8 +22,8 @@ function SecondNav() {
             <Nav.Link className="navelements" href="#project">
               Project
             </Nav.Link>
-            <Nav.Link className="navelements" href="#achievments">
-              Achievements
+            <Nav.Link className="navelements" href="#levels">
+              Skills
             </Nav.Link>
             <Nav.Link className="navelements" href="#contact">
               Contact
