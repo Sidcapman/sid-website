@@ -1,0 +1,15 @@
+.above-arrow {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.temp-arrow {
+  position: sticky;
+  top: 80vh;
+  z-index: 20;
+}
+.arrow {
+  position: relative;
+  right: 1.5rem;
+  cursor: pointer;
+}

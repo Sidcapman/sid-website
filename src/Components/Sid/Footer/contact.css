@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@100&family=Open+Sans&display=swap');
+
+.contact {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+.madeby-above {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: #2fa1d0;
+  width: 100%;
+  padding: 0.2rem;
+}
+
+.madeby a {
+  text-decoration: none;
+  margin-left: 0.5rem;
+}
+@media (max-width: 400px) {
+  .madeby a {
+    margin-left: 0.25rem;
+  }
+}
+.madeby {
+  top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.social-icons {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+
+.social-icons i {
+  margin: 0 0.25rem;
+}
+
+.icon-top a {
+  text-decoration: black;
+}
+
+@media (max-width: 450px) {
+  .madeby {
+    top: 0.25rem !important;
+  }
+  .social-icons i {
+    top: 0.25rem !important;
+  }
+}
+@media (min-width: 470px) {
+  .madeby-above {
+    padding: 0.7rem;
+  }
+  .madeby {
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    height: 100%;
+    width: 50vw;
+    position: relative;
+    left: 2rem;
+    margin-bottom: 1rem;
+  }
+  .social-icons {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    height: 100%;
+    width: 50vw;
+    position: relative;
+    bottom: 0rem;
+    right: 2rem;
+  }
+  .social-icons i {
+    margin: 0 0.5rem;
+    padding: 0.25rem;
+  }
+}

@@ -20,6 +20,9 @@ const Info = styled.div`
   z-index: 10;
   padding: 3rem;
   overflow: hidden;
+  @media (max-width: 270px) {
+    padding: 5px !important;
+  } ;
 `
 
 const Title = styled.div`
@@ -32,6 +35,7 @@ const Title = styled.div`
 const Descri = styled.div`
   font: 1rem;
 `
+
 //
 const Projects = () => {
   return (
@@ -45,21 +49,26 @@ const Projects = () => {
                 flexDirection: 'column',
                 position: 'relative',
               }}>
-              <Tilt style={{ width: '23rem' }} className="card" key={item.id}>
+              <Tilt
+                style={{ width: '23rem', position: 'relative' }}
+                className="card"
+                key={item.id}>
                 <Image src={item.image} alt={item.head} />
-                <Info className="content">
-                  <Title>{item.head}</Title>
-                  <Descri>{item.description}</Descri>
+                <Info>
+                  <Title className="title">{item.head}</Title>
+                  <Descri className="descri">{item.description}</Descri>
                 </Info>
               </Tilt>
-              <a href={item.demo} className="link">
-                <span>
-                  <i class="fab fa-firefox-browser fa-3x"></i>
-                </span>
-              </a>
-              <a href={item.source} className="link-1">
-                <i class="fab fa-github fa-3x"></i>
-              </a>
+              <div className="link">
+                <a href={item.demo}>
+                  <span>
+                    <i class="fab fa-firefox-browser fa-3x"></i>
+                  </span>
+                </a>
+                <a href={item.source}>
+                  <i class="fab fa-github fa-3x"></i>
+                </a>
+              </div>
             </div>
           )
         })}

@@ -1,29 +1,32 @@
 import React from 'react'
-import img4 from '../Components/Sid/Images/Validationform-1.png'
+import img4 from './1234-removebg-preview.png'
 //importing typewriter-effect
 import Typewriter from 'typewriter-effect'
-
+import cu from './cursor.png'
 function TypeWriter() {
-  var t = 'Hello  '
+  var t = "I'm"
   return (
     <div className="exp">
-      <div className="App exp-2">
+      <div className="App">
         <div>
-          <div>
-            <div>Hi, I'm Siddhartha</div>
-          </div>
-          <div className="temp">
+          <div>Hello, I'm Siddhartha</div>
+          <div className="below-name">
             {t}
             <div>
               <span className="color">
                 <Typewriter
                   options={{
-                    strings: ['Sidcapman', 'that', 'this'],
+                    strings: [
+                      'Computer Science Engineer',
+                      'Front End Developer',
+                      'Tech Junkie',
+                    ],
                     autoStart: true,
                     loop: true,
-                    cursor: '/',
+                    cursor: '_',
+                    pauseFOr: 3400,
                     deleteSpeed: 50,
-                    delay: 200,
+                    delay: 150,
                   }}
                 />
               </span>
@@ -32,7 +35,7 @@ function TypeWriter() {
         </div>
       </div>
       <div className="exp-2">
-        <img src="" alt="sid" />
+        <img className="image" src={img4} alt="sid" />
       </div>
     </div>
   )

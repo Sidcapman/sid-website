@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@100&family=Open+Sans&family=Zen+Kurenaido&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@500&display=swap');
+
+#about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 0rem;
+}
+
+@media (max-width: 820px) {
+  #about {
+    padding: 0rem !important;
+  }
+}
+
+.aboutbelow {
+  margin: 0rem 10rem;
+  font-family: 'Zen Kaku Gothic Antique', sans-serif;
+}
+
+@media (max-width: 720px) {
+  .aboutbelow {
+    padding: 0rem !important;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .aboutbelow,
+  #about {
+    margin: 0rem 2rem !important;
+  }
+}
+@media screen and (max-width: 600px) {
+  #about {
+    margin: 0rem !important;
+  }
+}
+.me-explanation {
+  margin: 1rem auto;
+  font-size: 24px;
+  font-family: 'Zen Kurenaido', sans-serif;
+  font-weight: bold;
+  gap: 4px;
+}
+
+.greeting {
+  font-size: 24px;
+}

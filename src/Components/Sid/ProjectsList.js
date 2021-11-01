@@ -7,7 +7,7 @@ export const data = [
     image: img1,
     head: 'Validation Form',
     description:
-      'This website Checks whether the entered details are matching the requirements',
+      'Checks whether the entered details are matching the requirements',
     source: 'https://github.com/Sidcapman/Validation-form',
     demo: 'https://sidcapman.github.io/Validation-form/',
   },
@@ -24,7 +24,7 @@ export const data = [
     image: img3,
     head: 'Code-Pen Clone',
     description:
-      'This website shows the live preview of the entered HTML, CSS and JavaScript',
+      'Shows the live preview of the entered HTML, CSS and JavaScript',
     demo: 'https://react-codepen-clone-1943.netlify.app/',
     source: 'https://github.com/Sidcapman/CodePen-Clone',
   },

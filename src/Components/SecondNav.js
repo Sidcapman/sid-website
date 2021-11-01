@@ -1,17 +1,12 @@
 import React, { Component } from 'react'
 import { Navbar, Nav, NavDropdown, Button, Container } from 'react-bootstrap'
-import img from '../Img/logo192.png'
+import img from '../Img/icon.ico'
 function SecondNav() {
   return (
     <div>
       <Navbar className="main-nav" expand="lg">
         <Navbar.Brand href="#home">
-          <img
-            className="logo"
-            src={img}
-            style={{ height: '50px', width: '50px' }}
-            alt="logo"
-          />
+          <img className="logo" src={img} alt="logo" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbar-nav" />
         <Navbar.Collapse id="navbar-nav">
@@ -19,11 +14,12 @@ function SecondNav() {
             <Nav.Link className="navelements" href="#about">
               About
             </Nav.Link>
-            <Nav.Link className="navelements" href="#project">
-              Project
-            </Nav.Link>
+
             <Nav.Link className="navelements" href="#levels">
               Skills
+            </Nav.Link>
+            <Nav.Link className="navelements" href="#project">
+              Project
             </Nav.Link>
             <Nav.Link className="navelements" href="#contact">
               Contact

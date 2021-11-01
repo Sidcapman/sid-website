@@ -3,6 +3,11 @@ import ReactDOM from 'react-dom'
 import App from './App'
 import './index.css'
 import '../src/Components/Sid/Levels/progress.css'
+import '../src/Components/Sid/ScrollUpArrow/arrow.css'
+import '../src/Components/Sid/Footer/contact.css'
+import '../src/Components/TypeWritter/typewritter.css'
+import '../src/Components/Sid/About/about.css'
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
