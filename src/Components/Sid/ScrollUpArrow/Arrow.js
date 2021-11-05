@@ -25,7 +25,7 @@ function Arrow() {
   return (
     <div className="above-arrow">
       <div className="arrow" onClick={goTop}>
-        <i class="fas fa-arrow-circle-up fa-2x"></i>
+        <i className="fas fa-arrow-circle-up fa-2x"></i>
       </div>
     </div>
   )

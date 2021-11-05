@@ -22,6 +22,9 @@ const Info = styled.div`
   overflow: hidden;
   @media (max-width: 270px) {
     padding: 5px !important;
+  }
+  @media (max-width: 400) {
+    top: 26.5rem !important;
   } ;
 `
 
@@ -44,6 +47,7 @@ const Projects = () => {
         {data.map((item) => {
           return (
             <div
+              key={item.id}
               style={{
                 display: 'flex',
                 flexDirection: 'column',

@@ -10,6 +10,12 @@
   padding: 2rem 0rem 0rem 0rem;
   /* background-image: linear-gradient(#2ec7bc, #45d4cb, #69e5e2); */
 }
+/* 
+@media (max-width: 450px) {
+  .main-container {
+    margin: 0.5rem;
+  }
+} */
 
 .language {
   position: absolute;
@@ -30,6 +36,27 @@
   align-items: center;
   border-radius: 0.8rem;
   overflow: hidden;
+}
+
+@media (max-width: 423px) {
+  /* .level-2 {
+    margin: 1rem auto !important;
+  } */
+  .second-container {
+    margin: 1rem auto !important ;
+  }
+
+  .level-2 {
+    padding: 0 !important;
+  }
+}
+
+.icon-posi {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .progress-complete {

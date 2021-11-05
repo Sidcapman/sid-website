@@ -11,7 +11,6 @@ function TypeWriter() {
         <div>
           <div>Hello, I'm Siddhartha</div>
           <div className="below-name">
-            {t}
             <div>
               <span className="color">
                 <Typewriter

@@ -3,6 +3,7 @@ import Progress from './ProgressComponenet'
 import { ProfciencyData } from './Proficiencydata'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
+
 function ProgressLevels() {
   // Aos.init({
   //   delay: 100,
@@ -13,6 +14,8 @@ function ProgressLevels() {
       {ProfciencyData.map((maindata) => {
         return (
           <div
+            key={maindata.id}
+            className="level-2"
             style={{
               alignItems: 'center',
               justifyContent: 'center',
@@ -20,13 +23,7 @@ function ProgressLevels() {
               padding: '1rem 3rem',
               overflowX: 'hidden',
             }}>
-            <span
-              style={{
-                position: 'relative',
-                left: '10rem',
-              }}>
-              {maindata.language}
-            </span>
+            <span className="icon-posi">{maindata.language}</span>
             <Progress data={maindata} />
           </div>
         )
